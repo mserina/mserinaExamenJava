@@ -1,0 +1,8 @@
+Abriendo menu gerente
+Crear nuevo cliente
+Abriendo menu empleado
+Añadir compra a un cliente
+Abriendo menu gerente
+Crear nuevo cliente
+Abriendo menu empleado
+Añadir compra a un cliente
