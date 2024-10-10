@@ -18,5 +18,10 @@ public interface OperacionInterfaz {
 	 */
 	public void añadirCompraCliente();
 	
+	/**
+	 * Calcula el importe de toda las ventas de una fecha especifica
+	 * msm - 101024
+	 */
+	
 	public void calculoTotalVentas();
 }
