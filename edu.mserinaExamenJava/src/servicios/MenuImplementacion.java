@@ -76,7 +76,7 @@ public class MenuImplementacion implements MenuInterfaz {
 				inicio.sw = new FileWriter(inicio.rutaLog, true);
 				inicio.sw.write("Abriendo calculo de ventas total mensual" + "\n");
 				inicio.sw.close();
-
+				op.calculoTotalVentas();
 				cerrarMenu = true;
 				break;
 			case 2:

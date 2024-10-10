@@ -17,4 +17,6 @@ public interface OperacionInterfaz {
 	 * msm - 101024
 	 */
 	public void añadirCompraCliente();
+	
+	public void calculoTotalVentas();
 }

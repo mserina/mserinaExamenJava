@@ -1,6 +1,7 @@
 package servicios;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 import controladores.inicio;
 import dtos.ClienteDto;
@@ -57,6 +58,26 @@ public class OperacionImplementacion implements OperacionInterfaz {
 			System.out.println(venta.toString());
 			System.out.println(" ");
 		}
+		
+	}
+	
+	public void calculoTotalVentas() {
+		
+		int importe = 0;
+		System.out.println("Inserte fecha de la venta");
+		String fechaString = inicio.sc.next();
+		DateTimeFormatter formato = DateTimeFormatter.ofPattern("MM-yyyy");
+		LocalDate fecha = LocalDate.parse(fechaString, formato);
+		
+		for(VentasDto venta : inicio.listaVentas) {
+			if(venta.getFecha() == fecha) {
+				
+				importe += venta.getImporte();
+			}
+		}
+		System.out.println(" ");
+		System.out.println("IMPORTE: " + importe);
+		System.out.println(" ");
 		
 	}
 
